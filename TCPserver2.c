@@ -19,7 +19,7 @@ int main(int args, char *argv[])
 
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = INADDR_ANY;
-	server.sin_port = htons(7890);
+	server.sin_port = htons(50000);
 
 	if(bind(socket_desc,(struct sockaddr *)&server, sizeof(server)) < 0)
 	{
